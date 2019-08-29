@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>Elm App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/4.5.0/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <script type="text/javascript" src="src/displayPanel/App.js"></script> -->
+</head>
+
+<body>
+
+
+  <div id="app">
+
+    <!-- Statusbar overlay -->
+    <div class="statusbar"></div>
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Initial Page, "data-name" contains page name -->
+      <div data-name="home" class="page">
+
+        <!-- Top Navbar -->
+        <div class="appbar">
+          <div class="appbar-inner">
+            <div class="left">
+              <a href="#" class="button panel-toggle display-flex">
+                <i class="f7-icons">bars</i>
+              </a>
+              <a href="#" class="button display-flex">
+                <i class="f7-icons">world_fill</i>
+                <div>GPS</div>
+              </a>
+            </div>
+            <div class="right">
+              <div class="searchbar searchbar-inline">
+
+                <input type="text" placeholder="Search app">
+                <i class="searchbar-icon"></i>
+                <div class="input-clear-button">
+                </div>
+              </div>
+            
+            
+              <a href="#" class="button display-flex">
+                <i class="f7-icons">person_round_fill</i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panels -->
+        <div class="panel panel-left panel-cover">
+          <div id="tab-0" data-infinite-distance="50" class="page-content infinite-scroll-content tab tab-active">
+            <div class="list">
+              <ol>
+
+                <li>
+                  <a data-reload-detail="true" href="#" class="item-link">
+                    <div class="item-inner">NDB 2045</div>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-reload-detail="true" href="#" class="item-link">
+                    <div class="item-inner">SAD 4305</div>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-reload-detail="true" href="#" class="item-link">
+                    <div class="item-inner">WBF 5396</div>
+                  </a>
+                </li>
+                </ul>
+            </div>
+
+          </div>
+          </div>
+
+
+          <!-- Bottom Toolbar -->
+          <div class="toolbar tabbar toolbar-bottom">
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+              <a href="#" class="tab-link" title="Home"><i class="f7-icons">home_fill</i></a>
+              <a href="/poi/" class="tab-link" title="POI"><i class="f7-icons">data_fill</i></a>
+              <a href="/poi/" class="tab-link" title="Geofence"><i class="f7-icons">document_chart_fill</i></a>
+              <a href="/poi/" class="tab-link" title="Playback"><i class="f7-icons">play_fill</i></a>
+              <a href="/poi/" class="tab-link" title="Alert Data"><i class="f7-icons">alert_fill</i></a>
+              <a href="/poi/" class="tab-link" title="Summary"><i class="f7-icons">info_round_fill</i></a>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+
+
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/framework7/4.5.0/js/framework7.bundle.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+
+
+</html>
