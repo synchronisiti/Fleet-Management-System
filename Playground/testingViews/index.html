@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Elm App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/4.5.0/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="../../main.css">
+  <link rel="stylesheet" href="../testing/icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <script type="text/javascript" src="src/displayPanel/App.js"></script> -->
+</head>
+
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+
+    <!-- Appbar -->
+    <div class="appbar">
+      <div class="appbar-inner">
+        <div class="left">
+          <a href="#" class="button display-flex">
+            <i class="f7-icons">world_fill</i>
+            <div>GPS</div>
+          </a>
+          <div class="searchbar searchbar-inline">
+
+            <input type="text" placeholder="Search app">
+            <i class="searchbar-icon"></i>
+            <div class="input-clear-button">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="right">
+          <a href="#" class="link popover-open" data-popover=".popover-links">
+            <i class="f7-icons">person_round_fill</i>
+
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPOVERS -->
+    <div class="popover popover-links">
+      <div class="popover-inner">
+        <div class="list">
+          <ul>
+            <li><a class="list-button item-link" href="#">User Profile</a></li>
+            <li><a class="list-button item-link" href="#">Repositories</a></li>
+            <li><a class="list-button item-link" href="#">Projects</a></li>
+            <li><a class="list-button item-link" href="#">Help</a></li>
+            <li><a class="list-button item-link" href="#">Settings</a></li>
+            <li><a class="list-button item-link" href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Toolbar -->
+    <div class="views tabs safe-areas">
+      <!-- Tabs for switching views-tabs -->
+      <div class="toolbar tabbar toolbar-bottom">
+        <div class="toolbar-inner">
+
+          <!-- Toolbar links -->
+          <a href="#view-home" class="tab-link" title="Home"><i class="f7-icons">home_fill</i></a>
+          <a href="#view-poi" class="tab-link" title="POI"><i class="f7-icons">data_fill</i></a>
+          <a href="#view-geofence" class="tab-link" title="Geofence"><i class="f7-icons">document_chart_fill</i></a>
+          <a href="#view-playback" class="tab-link" title="Playback"><i class="f7-icons">play_fill</i></a>
+          <a href="#view-alerts" class="tab-link" title="Alert Data"><i class="f7-icons">alert_fill</i></a>
+          <a href="#view-summary" class="tab-link" title="Summary"><i class="f7-icons">info_round_fill</i></a>
+        </div>
+      </div>
+
+      <!-- main view/tab -->
+      <div id="view-home" class="view view-main tab tab-active">
+        <div class="page" data-name="home">
+          <!-- Panels -->
+          <div class="panel panel-left panel-cover">
+            <div class="list links-list">
+              <ul>
+                <li><a href="#">NDB 2045</a></li>
+                <li><a href="#">WVD 4905</a></li>
+                <li><a href="#">KBV 2395</a></li>
+                <li><a href="#">JFL 5719</a></li>
+                <li><a href="#">BSA 5501</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Button to open panel -->
+          <div class="fab fab-extended fab-bottom">
+            <a href="#" class="panel-open">
+              <i class="icon f7-icons">bars</i>
+              <div class="fab-text">Car Plate</div>
+            </a>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="block">
+              HOME
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POI view -->
+      <div id="view-poi" class="view tab">
+        <div class="page">
+          <div class="page-content">
+            <div class="block">
+              poi
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Geoference view -->
+      <div id="view-geofence" class="view tab">
+        <div class="page">
+          <div class="page-content">
+            <div class="block">
+              Geofence
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alerts view -->
+      <div id="view-alerts" class="view tab">
+        <div class="page">
+          <div class="page-content">
+            <div class="block">
+              Alerts
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary view -->
+      <div id="view-summary" class="view tab">
+        <div class="page">
+          <div class="page-content">
+            <div class="block">
+              Summary
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playback view -->
+      <div id="view-playback" class="view tab">
+        <div class="page">
+          <div class="page-content">
+            <div class="block">
+              Playback
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/framework7/4.5.0/js/framework7.bundle.min.js"></script> -->
+  <script type="text/javascript" src="../../framework7/packages/core/js/framework7.bundle.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  
+
+</body>
+
+
+
+</html>
